@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href={{ url_for('static', filename='css/style.css' )}}>
+    <link rel="stylesheet" href={{ url_for('static', filename='css/responsive.css' )}}>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /* Paste provided CSS here */
+        /* Importing fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+        /* Resetting default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }    .navbar {
+      overflow: hidden;
+      background-color: #7AB730;
+      display: flex;
+    }
+    
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+        /* Applying custom font */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Container for login form */
+        .login-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            margin-top: 70px;
+            box-shadow: #000108;
+        }
+
+        /* Form heading */
+        .login-container h2 {
+            font-size: 28px;
+            font-weight: 500;
+            border-left: 8px solid #7AB730;
+            padding: 5px 15px;
+            margin-bottom: 15px;
+        }
+
+        /* Form fields */
+        .login-container input[type="text"],
+        .login-container input[type="password"],
+        .login-container input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            transition: box-shadow 0.3s ease;
+        }
+
+        /* Form fields focus */
+        .login-container input[type="text"]:focus,
+        .login-container input[type="password"]:focus {
+            box-shadow: 0 0 5px rgba(48, 48, 84, 0.5);
+        }
+
+        /* Login button */
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #7AB730;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 400;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Login button hover */
+        .login-container input[type="submit"]:hover {
+            background-color: #e6edff;
+            color: #7AB730;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <h2 style="color: white;">Travelmate</h2>
+  <a href="/">Home</a>
+
+</div>
+   <div style="display: flex;align-items:center;height:700px ">
+    <div style="margin-left: 100px;margin-top:100px" >
+        <img src="{{url_for('static',filename='img/home.png')}}" style="width:500px"/>
+    </div>
+    <div class="login-container" >
+        <h2>Register</h2><br>
+        <div style="margin-top: 0px;margin-bottom: 10px;">
+            <center style="color: red;">{{status}}</center>
+            <center style="color: rgb(7, 247, 47);">{{stat}}</center>
+        </div>
+        <form action="/register" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="cpassword" placeholder="Confirm Password" required>
+            <input type="submit" value="Register">
+        </form><br><br>
+        <div style="display: flex;">
+            <p style="margin-left: 10px;margin-right: 10px;">Already have an account?</p>
+            <a href="/log" style="text-decoration: none;color: #7AB730;">Login</a>
+        </div>
+    </div>
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,1085 @@
+{
+  "locations": [
+    {
+      "name": "Mumbai",
+      "events": [
+        {
+          "name": "Mumbai Food Festival",
+          "area": "Bandra",
+          "desc": "Join us for a culinary extravaganza featuring Mumbai's best street food and gourmet delights.",
+          "date": "2024-02-12",
+          "time": "6:00 PM - 10:00 PM",
+          "venue": "Bandra Reclamation Ground",
+          "contact": {
+            "organizer": "Mumbai Food Events",
+            "email": "info@mumbaifoodfest.com",
+            "phone": "+91-9876543210"
+          }
+        },
+        {
+          "name": "Art Exhibition: Colors of Mumbai",
+          "area": "Colaba",
+          "desc": "Discover stunning artworks inspired by the vibrant culture and landscapes of Mumbai.",
+          "date": "2024-06-01",
+          "time": "10:00 AM - 6:00 PM",
+          "venue": "National Gallery of Modern Art, Mumbai",
+          "contact": {
+            "organizer": "Mumbai Art Society",
+            "email": "info@mumbaiartsociety.org",
+            "phone": "+91-8765432109"
+          }
+        },
+        {
+          "name": "Music Concert in the Park",
+          "area": "Juhu",
+          "desc": "Enjoy an evening of live music performances by local artists amidst the beautiful setting of Juhu Beach.",
+          "date": "2024-05-25",
+          "time": "7:00 PM - 9:30 PM",
+          "venue": "Juhu Beach Park Amphitheater",
+          "contact": {
+            "organizer": "Mumbai Music Events",
+            "email": "contact@mumbaimusicevents.com",
+            "phone": "+91-7890123456"
+          }
+        },
+        {
+          "name": "Mumbai Fashion Week",
+          "area": "Lower Parel",
+          "desc": "Experience the latest in fashion with runway shows and designer showcases.",
+          "date": "2024-07-08",
+          "time": "11:00 AM - 9:00 PM",
+          "venue": "Mumbai Exhibition Centre, Lower Parel",
+          "contact": {
+            "organizer": "Mumbai Fashion Council",
+            "email": "info@mumbaifashionweek.com",
+            "phone": "+91-9876543222"
+          }
+        },
+        {
+          "name": "Stand-up Comedy Night",
+          "area": "Andheri",
+          "desc": "Laugh out loud with top comedians performing live stand-up comedy routines.",
+          "date": "2024-07-15",
+          "time": "8:00 PM - 10:00 PM",
+          "venue": "Canvas Laugh Club, Andheri West",
+          "contact": {
+            "organizer": "Mumbai Comedy Club",
+            "email": "info@mumbaicomedyclub.com",
+            "phone": "+91-9876543233"
+          }
+        },
+        {
+          "name": "Mumbai Tech Conference",
+          "area": "Powai",
+          "desc": "Explore the latest trends and innovations in technology at this informative conference.",
+          "date": "2024-06-30",
+          "time": "9:00 AM - 6:00 PM",
+          "venue": "Indian Institute of Technology Bombay (IIT Bombay), Powai",
+          "contact": {
+            "organizer": "Mumbai Tech Events",
+            "email": "info@mumbaitechconf.com",
+            "phone": "+91-9876543244"
+          }
+        },
+        {
+          "name": "Mumbai Marathon",
+          "area": "Marine Drive",
+          "desc": "Join thousands of runners in this iconic marathon along the stunning Marine Drive.",
+          "date": "2024-08-05",
+          "time": "5:30 AM - 10:00 AM",
+          "venue": "Starts at Chhatrapati Shivaji Maharaj Terminus (CSMT)",
+          "contact": {
+            "organizer": "Mumbai Marathon Association",
+            "email": "info@mumbaimarathon.org",
+            "phone": "+91-9876543255"
+          }
+        },
+        {
+          "name": "Mumbai Music Festival",
+          "area": "Worli Sea Face",
+          "desc": "Experience a weekend of music bliss with live performances by renowned artists.",
+          "date": "2024-09-15",
+          "time": "3:00 PM - 10:00 PM",
+          "venue": "Worli Sea Face Open Air Arena",
+          "contact": {
+            "organizer": "Mumbai Music Festival Committee",
+            "email": "info@mumbaimusicfest.org",
+            "phone": "+91-9876543266"
+          }
+        },
+        {
+          "name": "Mumbai Yoga Retreat",
+          "area": "Powai",
+          "desc": "Rejuvenate your mind and body with yoga sessions amidst nature at Powai Lake Gardens.",
+          "date": "2024-08-25",
+          "time": "7:00 AM - 6:00 PM",
+          "venue": "Powai Lake Gardens",
+          "contact": {
+            "organizer": "Mumbai Yoga Institute",
+            "email": "info@mumbaiyogaretreat.com",
+            "phone": "+91-9876543277"
+          }
+        },
+        {
+          "name": "Mumbai Film Festival",
+          "area": "Versova",
+          "desc": "Discover a diverse selection of films from around the world at this acclaimed film festival.",
+          "date": "2024-10-10",
+          "time": "11:00 AM - 9:00 PM",
+          "venue": "Versova Beach",
+          "contact": {
+            "organizer": "Mumbai Film Society",
+            "email": "info@mumbaifilmfest.com",
+            "phone": "+91-9876543288"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Delhi",
+      "events": [
+        {
+          "name": "Delhi Music Festival",
+          "area": "Connaught Place",
+          "desc": "Experience a weekend of live music performances by top artists from around the country.",
+          "date": "2024-06-08",
+          "time": "4:00 PM - 11:00 PM",
+          "venue": "Central Park, Connaught Place",
+          "contact": {
+            "organizer": "Delhi Music Society",
+            "email": "info@delhimusicfest.com",
+            "phone": "+91-9876543211"
+          }
+        },
+        {
+          "name": "Delhi Literature Festival",
+          "area": "India Gate",
+          "desc": "Celebrate the world of literature with renowned authors and book readings.",
+          "date": "2024-05-20",
+          "time": "11:00 AM - 7:00 PM",
+          "venue": "National Library, Delhi",
+          "contact": {
+            "organizer": "Delhi Literary Foundation",
+            "email": "info@delhiliteraturefest.org",
+            "phone": "+91-9876543212"
+          }
+        },
+        {
+          "name": "Delhi International Film Festival",
+          "area": "PVR Plaza, Connaught Place",
+          "desc": "Explore a diverse selection of international films and engage in discussions with filmmakers.",
+          "date": "2024-06-15",
+          "time": "10:00 AM - 8:00 PM",
+          "venue": "PVR Plaza, Connaught Place",
+          "contact": {
+            "organizer": "Delhi Film Society",
+            "email": "info@delhifilmfest.com",
+            "phone": "+91-9876543213"
+          }
+        },
+        {
+          "name": "Delhi Street Food Festival",
+          "area": "Chandni Chowk",
+          "desc": "Indulge in a variety of delicious street food from across Delhi's famous food stalls.",
+          "date": "2024-07-01",
+          "time": "5:00 PM - 10:00 PM",
+          "venue": "Jama Masjid Ground, Chandni Chowk",
+          "contact": {
+            "organizer": "Delhi Food Events",
+            "email": "info@delhifoodfest.com",
+            "phone": "+91-9876543244"
+          }
+        },
+        {
+          "name": "Delhi Art Week",
+          "area": "Saket",
+          "desc": "Explore contemporary and traditional art exhibitions featuring local and international artists.",
+          "date": "2024-07-20",
+          "time": "10:00 AM - 6:00 PM",
+          "venue": "Select Citywalk Mall, Saket",
+          "contact": {
+            "organizer": "Delhi Art Society",
+            "email": "info@delhiartsociety.org",
+            "phone": "+91-9876543255"
+          }
+        },
+        {
+          "name": "Delhi Fashion Show",
+          "area": "Vasant Kunj",
+          "desc": "Witness top fashion designers showcase their latest collections at a glamorous fashion show.",
+          "date": "2024-08-12",
+          "time": "7:00 PM - 10:00 PM",
+          "venue": "DLF Promenade Mall, Vasant Kunj",
+          "contact": {
+            "organizer": "Delhi Fashion Events",
+            "email": "info@delhifashionshow.com",
+            "phone": "+91-9876543266"
+          }
+        },
+        {
+          "name": "Delhi Tech Summit",
+          "area": "Nehru Place",
+          "desc": "Engage with industry leaders and experts at this premier technology summit.",
+          "date": "2024-09-05",
+          "time": "9:30 AM - 5:30 PM",
+          "venue": "IT Hub, Nehru Place",
+          "contact": {
+            "organizer": "Delhi Tech Association",
+            "email": "info@delhitechsummit.org",
+            "phone": "+91-9876543277"
+          }
+        },
+        {
+          "name": "Delhi Dance Festival",
+          "area": "Lodhi Road",
+          "desc": "Immerse yourself in the art of dance with captivating performances by leading dance troupes.",
+          "date": "2024-10-20",
+          "time": "6:00 PM - 9:00 PM",
+          "venue": "India Habitat Centre, Lodhi Road",
+          "contact": {
+            "organizer": "Delhi Dance Society",
+            "email": "info@delhidancefest.com",
+            "phone": "+91-9876543288"
+          }
+        },
+        {
+          "name": "Delhi Comedy Festival",
+          "area": "Gurgaon",
+          "desc": "Laugh your heart out with hilarious stand-up comedy acts from top comedians.",
+          "date": "2024-11-10",
+          "time": "8:30 PM - 11:00 PM",
+          "venue": "Cyber Hub, Gurgaon",
+          "contact": {
+            "organizer": "Delhi Comedy Club",
+            "email": "info@delhicomedyfest.com",
+            "phone": "+91-9876543299"
+          }
+        },
+        {
+          "name": "Delhi Craft Fair",
+          "area": "Pragati Maidan",
+          "desc": "Explore unique handmade crafts and artworks from artisans across India.",
+          "date": "2024-12-01",
+          "time": "11:00 AM - 8:00 PM",
+          "venue": "Pragati Maidan Exhibition Centre",
+          "contact": {
+            "organizer": "Delhi Craft Society",
+            "email": "info@delhicraftfair.com",
+            "phone": "+91-9876543300"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bangalore",
+      "events": [
+        {
+          "name": "Bangalore Music Festival",
+          "area": "Indiranagar",
+          "desc": "Immerse yourself in a weekend of music with live performances by local bands and artists.",
+          "date": "2024-06-15",
+          "time": "5:00 PM - 11:00 PM",
+          "venue": "Indiranagar Club",
+          "contact": {
+            "organizer": "Bangalore Music Association",
+            "email": "info@bangaloremusicfest.com",
+            "phone": "+91-9876544001"
+          }
+        },
+        {
+          "name": "Bangalore Tech Expo",
+          "area": "Whitefield",
+          "desc": "Discover the latest in technology and innovation at this exciting expo.",
+          "date": "2024-07-20",
+          "time": "10:00 AM - 7:00 PM",
+          "venue": "Bangalore International Exhibition Centre (BIEC), Whitefield",
+          "contact": {
+            "organizer": "Bangalore Tech Events",
+            "email": "info@bangaloretechexpo.com",
+            "phone": "+91-9876544002"
+          }
+        },
+        {
+          "name": "Bangalore Comedy Night",
+          "area": "Koramangala",
+          "desc": "Laugh out loud with hilarious stand-up comedy acts in the heart of Koramangala.",
+          "date": "2024-08-05",
+          "time": "8:00 PM - 10:00 PM",
+          "venue": "Jagriti Theatre, Koramangala",
+          "contact": {
+            "organizer": "Bangalore Comedy Club",
+            "email": "info@bangalorecomedynight.com",
+            "phone": "+91-9876544003"
+          }
+        },
+        {
+          "name": "Bangalore Fashion Week",
+          "area": "Malleswaram",
+          "desc": "Experience glamour and style with dazzling fashion shows and designer collections.",
+          "date": "2024-09-15",
+          "time": "7:00 PM - 10:00 PM",
+          "venue": "Manpho Convention Centre, Malleswaram",
+          "contact": {
+            "organizer": "Bangalore Fashion Council",
+            "email": "info@bangalorefashionweek.com",
+            "phone": "+91-9876544004"
+          }
+        },
+        {
+          "name": "Bangalore Food Fest",
+          "area": "HSR Layout",
+          "desc": "Indulge in a gastronomic adventure with diverse cuisines from around the world.",
+          "date": "2024-10-10",
+          "time": "12:00 PM - 10:00 PM",
+          "venue": "Pebble, HSR Layout",
+          "contact": {
+            "organizer": "Bangalore Food Events",
+            "email": "info@bangalorefoodfest.com",
+            "phone": "+91-9876544005"
+          }
+        },
+        {
+          "name": "Bangalore Literature Festival",
+          "area": "Cubbon Park",
+          "desc": "Celebrate literature and storytelling with acclaimed authors and book readings.",
+          "date": "2024-11-15",
+          "time": "10:00 AM - 7:00 PM",
+          "venue": "Bangalore International Centre, Cubbon Park",
+          "contact": {
+            "organizer": "Bangalore Literary Society",
+            "email": "info@bangalorelitfest.com",
+            "phone": "+91-9876544006"
+          }
+        },
+        {
+          "name": "Bangalore Art Exhibition",
+          "area": "Koramangala",
+          "desc": "Discover breathtaking artworks by emerging and established artists in Koramangala.",
+          "date": "2024-12-01",
+          "time": "11:00 AM - 6:00 PM",
+          "venue": "Gallery Time, Koramangala",
+          "contact": {
+            "organizer": "Bangalore Art Society",
+            "email": "info@bangaloreartsociety.org",
+            "phone": "+91-9876544007"
+          }
+        },
+        {
+          "name": "Bangalore Dance Festival",
+          "area": "Malleshwaram",
+          "desc": "Experience the grace and beauty of dance with mesmerizing performances.",
+          "date": "2025-01-15",
+          "time": "6:30 PM - 9:30 PM",
+          "venue": "Ravindra Kalakshetra, Malleshwaram",
+          "contact": {
+            "organizer": "Bangalore Dance Society",
+            "email": "info@bangaloredancefest.com",
+            "phone": "+91-9876544008"
+          }
+        },
+        {
+          "name": "Bangalore Tech Conference",
+          "area": "Electronic City",
+          "desc": "Connect with industry experts and explore cutting-edge technologies at this conference.",
+          "date": "2025-02-20",
+          "time": "9:00 AM - 5:00 PM",
+          "venue": "Infosys Campus, Electronic City",
+          "contact": {
+            "organizer": "Bangalore Tech Association",
+            "email": "info@bangaloretechconf.com",
+            "phone": "+91-9876544009"
+          }
+        },
+        {
+          "name": "Bangalore Film Festival",
+          "area": "Marathahalli",
+          "desc": "Celebrate cinema with screenings of acclaimed films and interactions with filmmakers.",
+          "date": "2025-03-10",
+          "time": "10:00 AM - 8:00 PM",
+          "venue": "Sri Gururaja Kalyana Mantapa, Marathahalli",
+          "contact": {
+            "organizer": "Bangalore Film Society",
+            "email": "info@bangalorefilmfest.com",
+            "phone": "+91-9876544010"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chennai",
+      "events": [
+        {
+          "name": "Chennai Music Festival",
+          "area": "Mylapore",
+          "desc": "Experience classical and contemporary music performances by renowned artists.",
+          "date": "2024-06-20",
+          "time": "6:00 PM - 9:00 PM",
+          "venue": "Mylapore Fine Arts Club",
+          "contact": {
+            "organizer": "Chennai Music Association",
+            "email": "info@chennaimusicfest.com",
+            "phone": "+91-9876545001"
+          }
+        },
+        {
+          "name": "Chennai Dance Showcase",
+          "area": "T. Nagar",
+          "desc": "Witness captivating dance performances showcasing various Indian dance forms.",
+          "date": "2024-07-10",
+          "time": "7:30 PM - 10:00 PM",
+          "venue": "Narada Gana Sabha, T. Nagar",
+          "contact": {
+            "organizer": "Chennai Dance Society",
+            "email": "info@chennaidanceshowcase.com",
+            "phone": "+91-9876545002"
+          }
+        },
+        {
+          "name": "Chennai Book Fair",
+          "area": "St. George Fort",
+          "desc": "Browse through a vast collection of books and attend book signings by popular authors.",
+          "date": "2024-08-15",
+          "time": "10:00 AM - 8:00 PM",
+          "venue": "Chennai Trade Centre, St. George Fort",
+          "contact": {
+            "organizer": "Chennai Book Society",
+            "email": "info@chennaibookfair.com",
+            "phone": "+91-9876545003"
+          }
+        },
+        {
+          "name": "Chennai Art Expo",
+          "area": "Adyar",
+          "desc": "Explore stunning artworks by local and national artists at this vibrant art expo.",
+          "date": "2024-09-20",
+          "time": "11:00 AM - 7:00 PM",
+          "venue": "Chennai Kalaikoodam, Adyar",
+          "contact": {
+            "organizer": "Chennai Art Society",
+            "email": "info@chennaiartexpo.com",
+            "phone": "+91-9876545004"
+          }
+        },
+        {
+          "name": "Chennai Fashion Week",
+          "area": "Anna Nagar",
+          "desc": "Celebrate fashion with spectacular runway shows and designer collections.",
+          "date": "2024-10-15",
+          "time": "7:00 PM - 10:00 PM",
+          "venue": "Chennai Trade Centre, Anna Nagar",
+          "contact": {
+            "organizer": "Chennai Fashion Council",
+            "email": "info@chennaifashionweek.com",
+            "phone": "+91-9876545005"
+          }
+        },
+        {
+          "name": "Chennai Tech Summit",
+          "area": "OMR",
+          "desc": "Engage in discussions on the latest technology trends and innovations.",
+          "date": "2024-11-10",
+          "time": "9:30 AM - 5:30 PM",
+          "venue": "IT Park, OMR",
+          "contact": {
+            "organizer": "Chennai Tech Association",
+            "email": "info@chennaitechsummit.com",
+            "phone": "+91-9876545006"
+          }
+        },
+        {
+          "name": "Chennai Street Food Festival",
+          "area": "Besant Nagar",
+          "desc": "Savor delicious street food from local vendors at the scenic Besant Nagar beach.",
+          "date": "2024-12-05",
+          "time": "5:00 PM - 10:00 PM",
+          "venue": "Besant Nagar Beach",
+          "contact": {
+            "organizer": "Chennai Food Events",
+            "email": "info@chennaistreetfoodfest.com",
+            "phone": "+91-9876545007"
+          }
+        },
+        {
+          "name": "Chennai Film Festival",
+          "area": "Velachery",
+          "desc": "Experience the magic of cinema with screenings of acclaimed films from around the world.",
+          "date": "2025-01-20",
+          "time": "11:00 AM - 9:00 PM",
+          "venue": "AGS Cinemas, Velachery",
+          "contact": {
+            "organizer": "Chennai Film Society",
+            "email": "info@chennaifilmfest.com",
+            "phone": "+91-9876545008"
+          }
+        },
+        {
+          "name": "Chennai Craft Fair",
+          "area": "Guindy",
+          "desc": "Discover unique handmade crafts and artworks crafted by skilled artisans.",
+          "date": "2025-02-15",
+          "time": "10:00 AM - 7:00 PM",
+          "venue": "Guindy Children's Park",
+          "contact": {
+            "organizer": "Chennai Craft Society",
+            "email": "info@chennaicraftfair.com",
+            "phone": "+91-9876545009"
+          }
+        },
+        {
+          "name": "Chennai Comedy Night",
+          "area": "Kilpauk",
+          "desc": "Laugh your heart out with hilarious stand-up comedy acts in Kilpauk.",
+          "date": "2025-03-10",
+          "time": "8:00 PM - 10:00 PM",
+          "venue": "The Savera Hotel, Kilpauk",
+          "contact": {
+            "organizer": "Chennai Comedy Club",
+            "email": "info@chennaicomedynight.com",
+            "phone": "+91-9876545010"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Kolkata",
+      "events": [
+        {
+          "name": "Kolkata Music Festival",
+          "area": "Park Street",
+          "desc": "Experience soul-stirring music performances by renowned artists at Park Street.",
+          "date": "2024-06-10",
+          "time": "6:30 PM - 9:30 PM",
+          "venue": "Kala Mandir, Park Street",
+          "contact": {
+            "organizer": "Kolkata Music Association",
+            "email": "info@kolkatamusicfest.com",
+            "phone": "+91-9876546001"
+          }
+        },
+        {
+          "name": "Kolkata Art Exhibition",
+          "area": "Ballygunge",
+          "desc": "Explore diverse artworks by talented artists from Kolkata and beyond.",
+          "date": "2024-07-05",
+          "time": "11:00 AM - 7:00 PM",
+          "venue": "Academy of Fine Arts, Ballygunge",
+          "contact": {
+            "organizer": "Kolkata Art Society",
+            "email": "info@kolkataartexpo.com",
+            "phone": "+91-9876546002"
+          }
+        },
+        {
+          "name": "Kolkata Literature Festival",
+          "area": "Victoria Memorial",
+          "desc": "Celebrate literature with engaging sessions and book launches at Victoria Memorial.",
+          "date": "2024-08-20",
+          "time": "10:00 AM - 7:00 PM",
+          "venue": "Victoria Memorial Hall",
+          "contact": {
+            "organizer": "Kolkata Literary Society",
+            "email": "info@kolkatalitfest.com",
+            "phone": "+91-9876546003"
+          }
+        },
+        {
+          "name": "Kolkata Fashion Week",
+          "area": "Salt Lake City",
+          "desc": "Witness the latest fashion trends with glamorous runway shows and designer exhibits.",
+          "date": "2024-09-15",
+          "time": "7:00 PM - 10:00 PM",
+          "venue": "Nicco Park, Salt Lake City",
+          "contact": {
+            "organizer": "Kolkata Fashion Council",
+            "email": "info@kolkatafashionweek.com",
+            "phone": "+91-9876546004"
+          }
+        },
+        {
+          "name": "Kolkata Street Food Fest",
+          "area": "Esplanade",
+          "desc": "Treat your taste buds to Kolkata's famous street food at the vibrant Esplanade area.",
+          "date": "2024-10-10",
+          "time": "5:00 PM - 10:00 PM",
+          "venue": "Esplanade Ground",
+          "contact": {
+            "organizer": "Kolkata Food Events",
+            "email": "info@kolkatafoodfest.com",
+            "phone": "+91-9876546005"
+          }
+        },
+        {
+          "name": "Kolkata Tech Summit",
+          "area": "New Town",
+          "desc": "Explore the future of technology and innovation at Kolkata's premier tech summit.",
+          "date": "2024-11-15",
+          "time": "9:00 AM - 6:00 PM",
+          "venue": "Biswa Bangla Convention Centre, New Town",
+          "contact": {
+            "organizer": "Kolkata Tech Association",
+            "email": "info@kolkatatechsummit.com",
+            "phone": "+91-9876546006"
+          }
+        },
+        {
+          "name": "Kolkata Film Festival",
+          "area": "Tollygunge",
+          "desc": "Celebrate cinema with screenings of acclaimed films and discussions with filmmakers.",
+          "date": "2024-12-05",
+          "time": "11:00 AM - 8:00 PM",
+          "venue": "Nandan, Tollygunge",
+          "contact": {
+            "organizer": "Kolkata Film Society",
+            "email": "info@kolkatafilmfest.com",
+            "phone": "+91-9876546007"
+          }
+        },
+        {
+          "name": "Kolkata Comedy Night",
+          "area": "Howrah",
+          "desc": "Laugh out loud with hilarious stand-up comedy acts in Howrah.",
+          "date": "2025-01-10",
+          "time": "8:00 PM - 10:00 PM",
+          "venue": "Howrah Indoor Stadium",
+          "contact": {
+            "organizer": "Kolkata Comedy Club",
+            "email": "info@kolkatacomedynight.com",
+            "phone": "+91-9876546008"
+          }
+        },
+        {
+          "name": "Kolkata Craft Fair",
+          "area": "Rabindra Sadan",
+          "desc": "Discover exquisite handmade crafts and artworks by skilled artisans at Rabindra Sadan.",
+          "date": "2025-02-15",
+          "time": "10:00 AM - 7:00 PM",
+          "venue": "Rabindra Sadan",
+          "contact": {
+            "organizer": "Kolkata Craft Society",
+            "email": "info@kolkatacraftfair.com",
+            "phone": "+91-9876546009"
+          }
+        },
+        {
+          "name": "Kolkata Dance Festival",
+          "area": "Camac Street",
+          "desc": "Experience the grace and elegance of Indian classical dance forms at Camac Street.",
+          "date": "2025-03-10",
+          "time": "7:00 PM - 10:00 PM",
+          "venue": "Kala Kunj, Camac Street",
+          "contact": {
+            "organizer": "Kolkata Dance Society",
+            "email": "info@kolkatadancefest.com",
+            "phone": "+91-9876546010"
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "Hyderabad",
+      "events": [
+        {
+          "name": "Hyderabad Food Festival",
+          "area": "HITEC City",
+          "desc": "Indulge in a variety of cuisines from across India at this vibrant food festival.",
+          "date": "2024-02-15",
+          "time": "6:00 PM - 10:00 PM",
+          "venue": "Hitex Exhibition Centre, HITEC City",
+          "contact": {
+            "organizer": "Hyderabad Food Events",
+            "email": "info@hyderabadfoodfest.com",
+            "phone": "+91-9876544001"
+          }
+        },
+        {
+          "name": "Hyderabad Comic Con",
+          "area": "Madhapur",
+          "desc": "Experience the excitement of comic books, movies, gaming, and cosplay at this annual convention.",
+          "date": "2024-06-20",
+          "time": "10:00 AM - 8:00 PM",
+          "venue": "Hitex Exhibition Centre, Madhapur",
+          "contact": {
+            "organizer": "Hyderabad Comic Con",
+            "email": "info@hyderabadcomiccon.com",
+            "phone": "+91-9876544002"
+          }
+        },
+        {
+          "name": "Hyderabad Literature Festival",
+          "area": "Gachibowli",
+          "desc": "Engage in literary discussions, book readings, and workshops with renowned authors.",
+          "date": "2024-07-15",
+          "time": "9:00 AM - 6:00 PM",
+          "venue": "University of Hyderabad, Gachibowli",
+          "contact": {
+            "organizer": "Hyderabad Literary Society",
+            "email": "info@hyderabadlitfest.com",
+            "phone": "+91-9876544003"
+          }
+        },
+        {
+          "name": "Hyderabad Fashion Week",
+          "area": "Banjara Hills",
+          "desc": "Witness stunning runway shows featuring top designers and emerging talents.",
+          "date": "2024-08-10",
+          "time": "7:00 PM - 10:00 PM",
+          "venue": "Novotel Hyderabad Convention Centre, Banjara Hills",
+          "contact": {
+            "organizer": "Hyderabad Fashion Council",
+            "email": "info@hyderabadfashionweek.com",
+            "phone": "+91-9876544004"
+          }
+        },
+        {
+          "name": "Hyderabad Tech Summit",
+          "area": "Himayat Nagar",
+          "desc": "Explore the latest advancements in technology and network with industry professionals.",
+          "date": "2024-09-15",
+          "time": "9:30 AM - 5:30 PM",
+          "venue": "Hyderabad International Convention Centre, Himayat Nagar",
+          "contact": {
+            "organizer": "Hyderabad Tech Association",
+            "email": "info@hyderabadtechsummit.com",
+            "phone": "+91-9876544005"
+          }
+        },
+        {
+          "name": "Hyderabad Music Festival",
+          "area": "Jubilee Hills",
+          "desc": "Enjoy live music performances by renowned artists amidst picturesque surroundings.",
+          "date": "2024-10-20",
+          "time": "6:00 PM - 10:00 PM",
+          "venue": "Shilpakala Vedika, Jubilee Hills",
+          "contact": {
+            "organizer": "Hyderabad Music Association",
+            "email": "info@hyderabadmusicfest.com",
+            "phone": "+91-9876544006"
+          }
+        },
+        {
+          "name": "Hyderabad Dance Carnival",
+          "area": "Secunderabad",
+          "desc": "Witness captivating dance performances showcasing diverse dance forms.",
+          "date": "2024-11-15",
+          "time": "7:30 PM - 10:00 PM",
+          "venue": "Ravindra Bharathi, Secunderabad",
+          "contact": {
+            "organizer": "Hyderabad Dance Society",
+            "email": "info@hyderabaddancecarnival.com",
+            "phone": "+91-9876544007"
+          }
+        },
+        {
+          "name": "Hyderabad Comedy Festival",
+          "area": "Kondapur",
+          "desc": "Laugh out loud with stand-up comedy acts by popular comedians.",
+          "date": "2024-12-10",
+          "time": "8:00 PM - 10:00 PM",
+          "venue": "N Convention Centre, Kondapur",
+          "contact": {
+            "organizer": "Hyderabad Comedy Club",
+            "email": "info@hyderabadcomedyfest.com",
+            "phone": "+91-9876544008"
+          }
+        },
+        {
+          "name": "Hyderabad Art Exhibition",
+          "area": "Somajiguda",
+          "desc": "Discover exquisite artworks by local and national artists at this vibrant art exhibition.",
+          "date": "2025-01-15",
+          "time": "11:00 AM - 7:00 PM",
+          "venue": "Hyderabad Marriott Hotel & Convention Centre, Somajiguda",
+          "contact": {
+            "organizer": "Hyderabad Art Society",
+            "email": "info@hyderabadartexpo.com",
+            "phone": "+91-9876544009"
+          }
+        },
+        {
+          "name": "Hyderabad Film Festival",
+          "area": "Film Nagar",
+          "desc": "Explore a diverse selection of films and engage in discussions with filmmakers.",
+          "date": "2025-02-20",
+          "time": "10:00 AM - 8:00 PM",
+          "venue": "Prasads IMAX, Film Nagar",
+          "contact": {
+            "organizer": "Hyderabad Film Society",
+            "email": "info@hyderabadfilmfest.com",
+            "phone": "+91-9876544010"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pune",
+      "events": [
+        {
+          "name": "Pune Music Festival",
+          "area": "Koregaon Park",
+          "desc": "Experience soulful music performances by local and international artists.",
+          "date": "2024-05-25",
+          "time": "6:30 PM - 10:30 PM",
+          "venue": "Royal Connaught Boat Club, Koregaon Park",
+          "contact": {
+            "organizer": "Pune Music Association",
+            "email": "info@punemusicfest.com",
+            "phone": "+91-9876544101"
+          }
+        },
+        {
+          "name": "Pune Tech Expo",
+          "area": "Magarpatta City",
+          "desc": "Explore the latest innovations and technologies at this premier tech expo.",
+          "date": "2024-06-15",
+          "time": "9:00 AM - 6:00 PM",
+          "venue": "Magarpatta City Convention Centre",
+          "contact": {
+            "organizer": "Pune Tech Association",
+            "email": "info@punetechexpo.com",
+            "phone": "+91-9876544102"
+          }
+        },
+        {
+          "name": "Pune Comedy Festival",
+          "area": "Baner",
+          "desc": "Laugh your heart out with hilarious stand-up comedy performances.",
+          "date": "2024-07-20",
+          "time": "8:00 PM - 10:00 PM",
+          "venue": "Jyran - Sofitel Pune, Baner",
+          "contact": {
+            "organizer": "Pune Comedy Club",
+            "email": "info@punecomedyfest.com",
+            "phone": "+91-9876544103"
+          }
+        },
+        {
+          "name": "Pune Literature Fest",
+          "area": "Aundh",
+          "desc": "Engage in thought-provoking discussions, book launches, and poetry readings.",
+          "date": "2024-08-25",
+          "time": "10:00 AM - 7:00 PM",
+          "venue": "Westin Pune Koregaon Park, Aundh",
+          "contact": {
+            "organizer": "Pune Literary Society",
+            "email": "info@punelitfest.com",
+            "phone": "+91-9876544104"
+          }
+        },
+        {
+          "name": "Pune Art Expo",
+          "area": "Shivajinagar",
+          "desc": "Discover stunning artworks and interact with talented artists from Pune.",
+          "date": "2024-09-10",
+          "time": "11:00 AM - 6:00 PM",
+          "venue": "Jehangir Art Gallery, Shivajinagar",
+          "contact": {
+            "organizer": "Pune Art Society",
+            "email": "info@puneartexpo.com",
+            "phone": "+91-9876544105"
+          }
+        },
+        {
+          "name": "Pune Fashion Week",
+          "area": "Kalyani Nagar",
+          "desc": "Witness glamorous fashion shows featuring leading designers and models.",
+          "date": "2024-10-15",
+          "time": "7:00 PM - 10:00 PM",
+          "venue": "JW Marriott Hotel, Kalyani Nagar",
+          "contact": {
+            "organizer": "Pune Fashion Council",
+            "email": "info@punefashionweek.com",
+            "phone": "+91-9876544106"
+          }
+        },
+        {
+          "name": "Pune Street Food Fest",
+          "area": "Deccan Gymkhana",
+          "desc": "Savor a variety of delicious street food delicacies from Pune's favorite vendors.",
+          "date": "2024-11-20",
+          "time": "5:00 PM - 10:00 PM",
+          "venue": "FC Road, Deccan Gymkhana",
+          "contact": {
+            "organizer": "Pune Food Events",
+            "email": "info@punestreetfoodfest.com",
+            "phone": "+91-9876544107"
+          }
+        },
+        {
+          "name": "Pune Film Festival",
+          "area": "Hadapsar",
+          "desc": "Experience a showcase of independent and international films at this prestigious festival.",
+          "date": "2024-12-15",
+          "time": "10:00 AM - 8:00 PM",
+          "venue": "Amanora Mall, Hadapsar",
+          "contact": {
+            "organizer": "Pune Film Society",
+            "email": "info@punefilmfest.com",
+            "phone": "+91-9876544108"
+          }
+        },
+        {
+          "name": "Pune Dance Carnival",
+          "area": "Wakad",
+          "desc": "Celebrate dance with electrifying performances and dance workshops.",
+          "date": "2025-01-20",
+          "time": "7:30 PM - 10:00 PM",
+          "venue": "Bal Gandharva Rang Mandir, Wakad",
+          "contact": {
+            "organizer": "Pune Dance Society",
+            "email": "info@punedancecarnival.com",
+            "phone": "+91-9876544109"
+          }
+        },
+        {
+          "name": "Pune Tech Conference",
+          "area": "Hinjewadi",
+          "desc": "Gain insights into emerging technologies and network with tech enthusiasts.",
+          "date": "2025-02-25",
+          "time": "9:00 AM - 5:00 PM",
+          "venue": "Infosys Campus, Hinjewadi",
+          "contact": {
+            "organizer": "Pune Tech Events",
+            "email": "info@punetechconf.com",
+            "phone": "+91-9876544110"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Visakhapatnam",
+      "events": [
+        {
+          "name": "Visakhapatnam Beach Festival",
+          "area": "RK Beach",
+          "desc": "Enjoy beach sports, cultural performances, and food stalls at Visakhapatnam's annual beach festival.",
+          "date": "2024-05-20",
+          "time": "4:00 PM - 10:00 PM",
+          "venue": "RK Beach, Visakhapatnam",
+          "contact": {
+            "organizer": "Visakhapatnam Tourism Department",
+            "email": "info@vizagbeachfest.com",
+            "phone": "+91-9876544201"
+          }
+        },
+        {
+          "name": "Visakhapatnam Kite Festival",
+          "area": "VUDA Park",
+          "desc": "Fly kites of various shapes and sizes amidst music and festivities.",
+          "date": "2024-06-15",
+          "time": "10:00 AM - 6:00 PM",
+          "venue": "VUDA Park, Visakhapatnam",
+          "contact": {
+            "organizer": "Visakhapatnam Kite Association",
+            "email": "info@vizagkitefest.com",
+            "phone": "+91-9876544202"
+          }
+        },
+        {
+          "name": "Visakhapatnam Food Carnival",
+          "area": "Waltair Uplands",
+          "desc": "Treat yourself to a gastronomic adventure with diverse cuisines at this food carnival.",
+          "date": "2024-07-10",
+          "time": "12:00 PM - 9:00 PM",
+          "venue": "Waltair Uplands, Visakhapatnam",
+          "contact": {
+            "organizer": "Visakhapatnam Food Events",
+            "email": "info@vizagfoodcarnival.com",
+            "phone": "+91-9876544203"
+          }
+        },
+        {
+          "name": "Visakhapatnam Music Fest",
+          "area": "Siripuram",
+          "desc": "Immerse yourself in melodious tunes and musical performances by talented artists.",
+          "date": "2024-08-15",
+          "time": "6:30 PM - 9:30 PM",
+          "venue": "Music Academy, Siripuram",
+          "contact": {
+            "organizer": "Visakhapatnam Music Association",
+            "email": "info@vizagmusicfest.com",
+            "phone": "+91-9876544204"
+          }
+        },
+        {
+          "name": "Visakhapatnam Art Expo",
+          "area": "MVP Colony",
+          "desc": "Discover stunning artworks and meet acclaimed artists from Visakhapatnam.",
+          "date": "2024-09-20",
+          "time": "11:00 AM - 7:00 PM",
+          "venue": "MVP Art Gallery, MVP Colony",
+          "contact": {
+            "organizer": "Visakhapatnam Art Society",
+            "email": "info@vizagartexpo.com",
+            "phone": "+91-9876544205"
+          }
+        },
+        {
+          "name": "Visakhapatnam Fashion Show",
+          "area": "Dwaraka Nagar",
+          "desc": "Witness stunning fashion displays and runway shows featuring top designers.",
+          "date": "2024-10-25",
+          "time": "7:00 PM - 9:00 PM",
+          "venue": "The Gateway Hotel, Dwaraka Nagar",
+          "contact": {
+            "organizer": "Visakhapatnam Fashion Council",
+            "email": "info@vizagfashionshow.com",
+            "phone": "+91-9876544206"
+          }
+        },
+        {
+          "name": "Visakhapatnam Tech Summit",
+          "area": "Madhurawada",
+          "desc": "Explore innovative technologies and network with tech enthusiasts and industry leaders.",
+          "date": "2024-11-10",
+          "time": "9:30 AM - 6:00 PM",
+          "venue": "Novotel Visakhapatnam Varun Beach, Madhurawada",
+          "contact": {
+            "organizer": "Visakhapatnam Tech Association",
+            "email": "info@vizagtechsummit.com",
+            "phone": "+91-9876544207"
+          }
+        },
+        {
+          "name": "Visakhapatnam Dance Festival",
+          "area": "Seethammadhara",
+          "desc": "Experience the grace and beauty of Indian classical dance forms at this vibrant festival.",
+          "date": "2024-12-15",
+          "time": "7:30 PM - 10:00 PM",
+          "venue": "Kala Bharati, Seethammadhara",
+          "contact": {
+            "organizer": "Visakhapatnam Dance Society",
+            "email": "info@vizagdancefest.com",
+            "phone": "+91-9876544208"
+          }
+        },
+        {
+          "name": "Visakhapatnam Comedy Night",
+          "area": "Lawsons Bay",
+          "desc": "Laugh your heart out with hilarious stand-up comedy acts by talented comedians.",
+          "date": "2025-01-20",
+          "time": "8:00 PM - 10:00 PM",
+          "venue": "The Park Visakhapatnam, Lawsons Bay",
+          "contact": {
+            "organizer": "Visakhapatnam Comedy Club",
+            "email": "info@vizagcomedynight.com",
+            "phone": "+91-9876544209"
+          }
+        },
+        {
+          "name": "Visakhapatnam Film Festival",
+          "area": "Pedda Waltair",
+          "desc": "Explore a diverse selection of films and engage in discussions with filmmakers.",
+          "date": "2025-02-15",
+          "time": "11:00 AM - 8:00 PM",
+          "venue": "INOX CMR Central, Pedda Waltair",
+          "contact": {
+            "organizer": "Visakhapatnam Film Society",
+            "email": "info@vizagfilmfest.com",
+            "phone": "+91-9876544210"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TRAVELER - Free Travel Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="static/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{{url_for('static',filename='lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}"
+        rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href={{ url_for('static', filename='css/style.css' ) }} rel="stylesheet">
+</head>
+
+<body>
+    
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="/index" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">TRAVEL</span>ER</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="/index" class="nav-item nav-link">Home</a>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+
+    <!-- Booking Start -->
+    <div class="container-fluid booking  pb-5" style="margin-top: 100px!important; ;">
+        <div class="container pb-5">
+            <div class="bg-light shadow" style="padding: 30px;">
+                <div class="row align-items-center" style="min-height: 60px;">
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3 mb-md-0">
+                                    <select class="custom-select px-4" style="height: 47px;" id="locationSelect">
+                                        <option value="default" selected disabled>Select a location...</option>
+                                        <option value="Hyderabad">Hyderabad</option>
+                                        <option value="Pune">Pune</option>
+                                        <option value="Mumbai">Mumbai</option>
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Bangalore">Bangalore</option>
+                                        <option value="Visakhapatnam">Visakhapatnam</option>
+                                        <option value="Chennai">Chennai</option>
+                                        <option value="Kolkata">Bangalore</option>
+                                        <option value="Bangalore">Bangalore</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking End -->
+
+
+
+
+
+
+    <!-- Packages Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Local Events</h6>
+            </div>
+            <div class="row" id="eventsContainer">
+              
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('locationSelect').addEventListener('change', function() {
+            const selectedLocation = this.value;
+            const currentDate = new Date(); // Get current date
+        
+            fetch(`/locations`)
+                .then(response => response.json())
+                .then(data => {
+                    const locations = data.locations;
+                    const selectedLocationData = locations.find(loc => loc.name === selectedLocation);
+        
+                    const eventsContainer = document.getElementById('eventsContainer');
+                    eventsContainer.innerHTML = ''; // Clear previous events
+        
+                    if (selectedLocationData && selectedLocationData.events) {
+                        selectedLocationData.events.forEach(event => {
+                            // Parse event date
+                            const eventDate = new Date(event.date);
+        
+                            // Check if the event date is after the current date
+                            if (eventDate > currentDate) {
+                                const eventCard = `
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="package-item bg-white mb-2">
+                                            <div class="p-4">
+                                                <div class="d-flex justify-content-between mb-3">
+                                                    <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>${event['venue']}</small>
+                                                    <small class="m-0"><i class="fa fa-calendar-alt text-primary"></i>${event.date}</small>
+                                                </div>
+                                                <a class="h5 text-decoration-none">${event.name}</a>
+                                                <br>
+                                                <p class="h6">${event.desc}</p>
+                                                <div class="border-top mt-4 pt-4">
+                                                    <div class="d-flex justify-content-between">
+                                                        <h6 class="m-0">
+                                                            <small>
+                                                                <i class="fa fa-phone text-primary mr-2"></i>${event.contact.phone} - ${event.contact.email}
+                                                            </small>
+                                                            <br>
+                                                            <small>
+                                                                <i class="fa fa-user text-primary mr-2"></i>${event.contact.organizer}
+                                                            </small>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `;
+        
+                                eventsContainer.innerHTML += eventCard;
+                            }
+                        });
+        
+                        if (eventsContainer.innerHTML === '') {
+                            const noEventsMessage = document.createElement('p');
+                            noEventsMessage.textContent = 'No upcoming events found for this location.';
+                            eventsContainer.appendChild(noEventsMessage);
+                        }
+                    } else {
+                        const noEventsMessage = document.createElement('p');
+                        noEventsMessage.textContent = 'No events found for this location.';
+                        eventsContainer.appendChild(noEventsMessage);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching events:', error);
+                });
+        });
+              </script>
+
+
+
+
+
+
+   
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-white">TRAVEL</span>ER</h1>
+                </a>
+                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
+                
+            </div>
+               
+        </div>
+    </div>
+   
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="{{url_for('static',filename='https://code.jquery.com/jquery-3.4.1.min.js')}}"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{{url_for('static',filename='lib/easing/easing.min.js')}}"></script>
+    <script src="{{url_for('static',filename='lib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{url_for('static',filename='lib/tempusdominus/js/moment.min.js')}}"></script>
+    <script src="{{url_for('static',filename='lib/tempusdominus/js/moment-timezone.min.js')}}"></script>
+    <script src="{{url_for('static',filename='lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js')}}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{{url_for('static',filename='mail/jqBootstrapValidation.min.js')}}"></script>
+    <script src="{{url_for('static',filename='mail/contact.js')}}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{url_for('static',filename='js/main.js')}}"></script>
+</body>
+
+</html>

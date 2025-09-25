@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TRAVELER - Free Travel Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="static/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{{url_for('static',filename='lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}"
+        rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href={{ url_for('static', filename='css/style.css' ) }} rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .weather-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .weather-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="/index" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">TRAVEL</span>ER</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="/index" class="nav-item nav-link">Home</a>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+
+    <div class="container" style="margin-top:100px ;">
+        <div class="weather-container">
+            <h2 class="text-center mb-4">Weather App</h2>
+            <div class="form-group">
+                <label for="locationInput">Enter Location:</label>
+                <input type="text" class="form-control" id="locationInput" placeholder="Enter city name">
+            </div>
+            <button type="button" class="btn btn-primary btn-block" onclick="getWeather()">Get Weather</button>
+            <div id="weatherInfo" class="mt-4"></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+    <script>
+        function getWeather() {
+            const locationInput = document.getElementById('locationInput').value.trim();
+
+            if (locationInput === '') {
+                alert('Please enter a valid location.');
+                return;
+            }
+
+            // Fetch weather data from OpenWeatherMap API
+            const apiKey = '49cc8c821cd2aff9af04c9f98c36eb74';
+            const apiUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${locationInput}&limit=1&appid=${apiKey}`;
+
+            fetch(apiUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.length === 0) {
+                        throw new Error('Location not found');
+                    }
+
+                    const { lat, lon } = data[0];
+                    const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+
+                    return fetch(weatherApiUrl);
+                })
+                .then(response => response.json())
+                .then(weatherData => {
+                    const weatherInfo = document.getElementById('weatherInfo');
+                    const weatherIconUrl = `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
+
+                    weatherInfo.innerHTML = `
+                        <h4>${locationInput}</h4>
+                        <img src="${weatherIconUrl}" class="weather-icon" alt="Weather Icon" style="filter: drop-shadow(3px 2px 5px #000000)"> 
+                        <p>Temperature: ${weatherData.main.temp}°C</p>
+                        <p>Description: ${weatherData.weather[0].description}</p>
+                        <p>Humidity: ${weatherData.main.humidity}%</p>
+                    `;
+                })
+                .catch(error => {
+                    console.error('Error fetching weather data:', error);
+                    const weatherInfo = document.getElementById('weatherInfo');
+                    weatherInfo.innerHTML = `<p class="text-danger">Error fetching weather data. Please try again.</p>`;
+                });
+        }
+    </script>
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-white">TRAVEL</span>ER</h1>
+                </a>
+                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
+                
+            </div>
+               
+        </div>
+    </div>
+   
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="{{url_for('static',filename='https://code.jquery.com/jquery-3.4.1.min.js')}}"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{{url_for('static',filename='lib/easing/easing.min.js')}}"></script>
+    <script src="{{url_for('static',filename='lib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{url_for('static',filename='lib/tempusdominus/js/moment.min.js')}}"></script>
+    <script src="{{url_for('static',filename='lib/tempusdominus/js/moment-timezone.min.js')}}"></script>
+    <script src="{{url_for('static',filename='lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js')}}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{{url_for('static',filename='mail/jqBootstrapValidation.min.js')}}"></script>
+    <script src="{{url_for('static',filename='mail/contact.js')}}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{url_for('static',filename='js/main.js')}}"></script>
+</body>
+
+</html>
+
+

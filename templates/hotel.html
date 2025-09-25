@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel booking</title>
+
+  <style>
+    /* CSS for the registration page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #7AB730;
+      display: flex;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+
+    .btn1 {
+      font-size: 1rem;
+      font-weight: 400;
+      background-color: #7AB730;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none !important;
+      transition: all 0.5s;
+      margin-top: 30px;
+    }
+
+    .btn1:hover {
+      background-color: #e6edff;
+      color: #7AB730;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    select,
+    input[type="date"],
+    input[type="number"] {
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      width: 180px;
+    }
+
+    table {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <h2 style="color: white;margin-right: 1000px;margin-left: 20px;">Travelmate</h2>
+    <a href="/uhome">Home</a>
+  </div>
+  <div>
+    <center style="margin-top: 30px;color: #7AB730;">
+      {{status}}
+    </center>
+  </div>
+  <center style="margin-top: 50px;">
+    <h2>Select your Accommodation</h2>
+    <form action="/hotelbook" method="post">
+      <table>
+        <tr>
+          <th><label for="state">Select State:</label></th>
+          <td><select id="state" onchange="populateCities()" name="state">
+              <option value="">Select state</option>
+            </select></td>
+        </tr>
+        <tr>
+          <th>
+            <label for="city">Select City:</label>
+          </th>
+          <td>
+            <select id="city" onchange="populatePlaces()" name="city">
+              <option value="">Select city</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="place">Select hotel:</label>
+          </th>
+          <td>
+            <select id="place" name="place">
+              <option value="">Select hotel</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="room-type">Room Type:</label></th>
+          <td>
+            <select id="room-type" name="room-type">
+              <option value="">Select room type</option>
+              <option value="single">Single</option>
+              <option value="double">Double</option>
+              <option value="suite">Suite</option>
+              <!-- Add more room types as needed -->
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="check-in">Check-in Date:</label></th>
+          <td><input type="date" id="check-in" name="check-in"></td>
+        </tr>
+        <tr>
+          <th><label for="check-out">Check-out Date:</label></th>
+          <td><input type="date" id="check-out" name="check-out"></td>
+        </tr>
+        <tr>
+          <th><label for="guests">Number of Guests:</label></th>
+          <td><input type="number" id="guests" name="guests" min="1"></td>
+        </tr>
+
+      </table>
+      <button type="submit" class="btn1">Book Now</button>
+    </form>
+  </center>
+  <script>
+    // Sample data for states, cities, and places
+    const data = {
+      "Uttar Pradesh": {
+        "Agra": ["The Oberoi Amarvilas", "ITC Mughal", "A Luxury Collection Hotel", "Trident Agra", "Courtyard by Marriott Agra", "Taj Hotel & Convention Centre, Agra"],
+        "Varanasi": ["Taj Ganges", "Taj Ganges", "Brijrama Palace - A Heritage Hotel", "Hotel Surya", "Ramada Plaza JHV Varanasi", "The Gateway Hotel Ganges Varanasi"],
+        "Lucknow": ["Taj Mahal Lucknow", "Renaissance Lucknow Hotel", "Hyatt Regency Lucknow", "Novotel Lucknow Gomti Nagar", "Vivanta by Taj - Gomti Nagar, Lucknow"],
+        "Allahabad": ["The Legend Hotel, Prayagraj", "Hotel Kanha Shyam", "Hotel Prayag", "Hotel Polo Max Allahabad", "Hotel Samrat"],
+        "Mathura": ["Brijwasi Royal", "Radha Ashok", "Kridha Residency", "Hotel Heera Celebration", "Hotel Ganga Palace"]
+      },
+      "Maharashtra": {
+        "Mumbai": ["The Taj Mahal Palace", "The Oberoi Mumbai", "JW Marriott Mumbai Juhu", "Trident, Nariman Point", "Grand Hyatt Mumbai Hotel & Residences"],
+        "Pune": ["Conrad Pune", "JW Marriott Hotel Pune", "The Westin Pune Koregaon Park", "Sheraton Grand Pune Bund Garden Hotel", "Hyatt Regency Pune"],
+        "Nashik": ["The Gateway Hotel Ambad Nashik", "Express Inn - Nashik", "ibis Nashik", "Ginger Nashik", "Soma Vineyard Resort"],
+        "Aurangabad": ["Vivanta Aurangabad", "Welcomhotel by ITC Hotels", "Lemon Tree Hotel, Aurangabad ", "The Meadows Resort and Spa"],
+        "Nagpur": ["Radisson Blu Hotel Nagpur", "The Pride Hotel Nagpur", "Hotel Tuli Imperial", "Hotel Centre Point", "Hotel Airport Centre Point"]
+      },
+      " Rajasthan": {
+        "Jaipur": ["The Oberoi Rajvilas", "Taj Rambagh Palace", "Fairmont Jaipur", "JW Marriott Jaipur Resort & Spa", " Trident, Jaipur "],
+        "Udaipur": ["The Oberoi Udaivilas", "Taj Lake Palace", "The Leela Palace Udaipur", "Trident Udaipur", "Radisson Blu Udaipur Palace Resort"],
+        "Jodhpur": ["Taj Umaid Bhawan Palace", "Raas Jodhpur", "The Gateway Hotel Jodhpur", "Vivanta by Taj - Hari Mahal, Jodhpur", "The Ajit Bhawan - A Palace Resort"],
+        "Jaisalmer": ["Suryagarh", "The Serai", "Marriott Jaisalmer Resort & Spa", "Fort Rajwada", "Desert Tulip Hotel & Resort"]
+      }
+      // Add more states, cities, and places as needed
+    };
+
+    // Function to populate cities based on selected state
+    function populateCities() {
+      const stateSelect = document.getElementById("state");
+      const citySelect = document.getElementById("city");
+      const placeSelect = document.getElementById("place");
+      const selectedState = stateSelect.value;
+
+      // Clear city and place options
+      citySelect.innerHTML = '<option value="">Select</option>';
+      placeSelect.innerHTML = '<option value="">Select</option>';
+
+      // Populate cities based on selected state
+      if (selectedState !== "") {
+        const cities = Object.keys(data[selectedState]);
+        for (const city of cities) {
+          const option = document.createElement("option");
+          option.value = city;
+          option.text = city;
+          citySelect.appendChild(option);
+        }
+      }
+    }
+
+    // Function to populate places based on selected city
+    function populatePlaces() {
+      const stateSelect = document.getElementById("state");
+      const citySelect = document.getElementById("city");
+      const placeSelect = document.getElementById("place");
+      const selectedState = stateSelect.value;
+      const selectedCity = citySelect.value;
+
+      // Clear place options
+      placeSelect.innerHTML = '<option value="">Select</option>';
+
+      // Populate places based on selected city
+      if (selectedState !== "" && selectedCity !== "") {
+        const places = data[selectedState][selectedCity];
+        for (const place of places) {
+          const option = document.createElement("option");
+          option.value = place;
+          option.text = place;
+          placeSelect.appendChild(option);
+        }
+      }
+    }
+
+    // Populate initial state options
+    document.addEventListener("DOMContentLoaded", function () {
+      const stateSelect = document.getElementById("state");
+      for (const state in data) {
+        const option = document.createElement("option");
+        option.value = state;
+        option.text = state;
+        stateSelect.appendChild(option);
+      }
+    });
+  </script>
+</body>
+
+</html>

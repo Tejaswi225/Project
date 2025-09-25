@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel booking Page</title>
+
+  <style>
+    /* CSS for the registration page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #7AB730;
+      display: flex;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+
+
+    .btn1 {
+      font-size: 1rem;
+      font-weight: 400;
+      background-color: #7AB730;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none !important;
+      transition: all 0.5s;
+      margin-top: 30px;
+    }
+
+    .btn1:hover {
+      background-color: #e6edff;
+      color: #7AB730;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    select,
+    input {
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      width: 180px;
+    }
+
+    table {
+      margin-top: 30px;
+    }
+
+    select {
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      width: 180px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <h2 style="color: white;margin-right: 1000px;margin-left: 20px;">Travelmate</h2>
+    <a href="/uhome">Home</a>
+  </div>
+
+  <body>
+    <div>
+      <center style="margin-top: 30px;color: #7AB730;">
+        {{status}}
+      </center>
+    </div>
+    <center style="margin-top: 50px;">
+      <h2>Select your Travels</h2>
+      <form action="/travelbook" method="post">
+        <table>
+          <tr>
+            <th>
+              <label for="start">From:</label>
+            </th>
+            <td>
+              <input type="text" name="from" placeholder="Select start point">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="To">To:</label>
+            </th>
+            <td>
+              <input type="text" name="to" placeholder="Select Destination">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="date">Date:</label>
+            </th>
+            <td>
+              <input type="date" name="date" placeholder="Select Date">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="time">Preferred Time:</label>
+            </th>
+            <td>
+              <select name="time" id="time">
+                <option value="">Select time</option>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="class">Class:</label>
+            </th>
+            <td>
+              <select name="class" id="class">
+                <option value="">Select class</option>
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <option value="first">First Class</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="passengers">Number of Passengers:</label>
+            </th>
+            <td>
+              <input type="number" name="passengers" placeholder="Enter number of passengers">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="vehicle">Types of Vehicles:</label>
+            </th>
+            <td>
+              <select name="vehicle" id="vehicle">
+                <option value="">Select vehicle type</option>
+                <option value="car">Car</option>
+                <option value="van">Van</option>
+                <option value="bus">Bus</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <button type="submit" class="btn1">Book Now</button>
+      </form>
+    </center>
+
+  </body>
+
+</html>
